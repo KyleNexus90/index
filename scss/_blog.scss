@@ -1,0 +1,84 @@
+/*****************************
+  		Blog
+*****************************/
+
+.blog-post {
+    border-radius: $border-radius;
+    position: relative;
+    overflow: hidden;
+    .blog-post-content {
+        padding: 30px;
+        background: $gray-1;
+    }
+
+    .blog-post-meta {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+
+            .blog-post-date {
+                position: relative;
+                padding-right: 16px;
+
+                &:before {
+                    position: absolute;
+                    right: 0;
+                    width: 2px;
+                    height: 15px;
+                    background: $body-color;
+                    content: "";
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+
+            }
+
+            a {
+                color: $body-color;
+                font-weight: 500;
+
+                &:hover {
+                    color: $primary;
+                }
+
+            }
+
+            .blog-post-author {
+                padding-left: 20px;
+                font-weight: 500;
+            }
+
+        }
+
+        .blog-post-title {
+            line-height: 28px;
+            margin-bottom: 0;
+        }
+
+    .blog-post-image {
+        img {
+            border-top-left-radius: $border-radius;
+            border-top-right-radius: $border-radius;
+        }
+
+    }
+
+
+}
+
+@media (max-width:479px) {
+    .blog-post .blog-post-meta{
+        display: block;
+    }
+    .blog-post .blog-post-meta .blog-post-date{
+        padding-right: 0;
+        margin-bottom: 8px;
+    }
+    .blog-post .blog-post-meta .blog-post-date:before{
+        display: none;
+    }
+    .blog-post .blog-post-meta .blog-post-author{
+        padding-left: 0px;
+        margin-bottom: 8px;
+    }
+}

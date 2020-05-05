@@ -1,0 +1,30 @@
+/*****************************
+  Countdown
+*****************************/
+
+.countdown {
+	display: inline-block;
+	text-align: left;
+	background: $white;
+	border-radius: $border-radius;
+	box-shadow: $box-shadow;
+	padding: 25px 25px;
+	width: 100%;
+
+	span {
+		font-size: 34px;
+		line-height: 34px;
+		font-weight: 600;
+		font-family: $font-hedding;
+		color: $gray-9;
+	}
+
+	p {
+		font-size: 16px;
+		line-height: 26px;
+		font-weight: 500;
+		text-transform: capitalize;
+		margin-bottom: 0;
+	}
+
+}

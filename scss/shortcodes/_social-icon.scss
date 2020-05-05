@@ -1,0 +1,60 @@
+/*****************************
+	Social Icon
+*****************************/
+
+.social-icon {
+	ul {
+		display: flex;
+		margin: 0;
+		padding: 0;
+
+		li {
+			list-style-type: none;
+			margin-right: 20px;
+
+			a {
+				font-size: 16px;
+				color: $gray-9;
+				display: block;
+
+				&:hover {
+					color: $primary;
+				}
+
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+		}
+
+	}
+
+}
+
+.social-icon.social-icon-02 {
+	ul {
+		li {
+			a {
+				font-size: 16px;
+				color: $white;
+				text-align: center;
+				width: 50px;
+				height: 50px;
+				line-height: 50px;
+				background: rgba($white, 0.1);
+				border-radius: $border-radius;
+
+				&:hover {
+					background: rgba($white, 1);
+					color: $primary;
+				}
+
+			}
+
+		}
+
+	}
+
+}

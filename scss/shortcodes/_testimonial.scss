@@ -1,0 +1,311 @@
+/*****************************
+	Testimonial
+*****************************/
+
+.testimonial-item {
+	position: relative;
+
+	.testimonial-quote {
+		margin-bottom: 20px;
+
+		i {
+			font-size: 62px;
+			display: inline-block;
+			line-height: 62px;
+			color: $primary;
+		}
+
+	}
+
+	.testimonial-content {
+		p {
+			font-size: 24px;
+			line-height: 34px;
+			color: $gray-8;
+			margin-bottom: 35px;
+		}
+
+	}
+
+	.testimonial-author {
+		display: flex;
+		margin-bottom:0px;
+
+		.testimonial-avatar {
+			margin-right: 15px;
+
+			img {
+				border-radius: $border-radius;
+			}
+
+		}
+
+		.testimonial-name {
+			.name {
+				font-size: 16px;
+				margin-bottom: 0px;
+				font-weight: 600;
+				color: $gray-8;
+			}
+
+			span {
+				font-size: 12px;
+				line-height: 20px;
+				color: $primary;
+				font-weight: 400;
+			}
+
+		}
+
+	}
+
+}
+
+/* testimonial center */
+.testimonial-center {
+	.testimonial-item {
+		text-align: center;
+		padding: 0 15%;
+
+		.testimonial-author {
+			margin-bottom: 0;
+			display: inline-block;
+
+			.testimonial-avatar {
+				display: none;
+			}
+
+		}
+
+	}
+
+}
+
+/* testimonial-bg */
+.testimonial-bg.owl-carousel {
+	.testimonial-item {
+		padding: 70px 40px;
+		background: $gray-1;
+
+		.testimonial-content {
+			p {
+				font-size: 18px;
+				line-height: 28px;
+			}
+
+		}
+
+	}
+
+	.owl-nav {
+		.owl-prev {
+			left: -100px;
+		}
+
+		.owl-next {
+			right: -100px;
+		}
+
+	}
+
+}
+
+.testimonial-bg.testimonial-bg-dark.owl-carousel {
+	.testimonial-item {
+		background: $gray-9;
+
+		.testimonial-content {
+			p {
+				color: $white;
+			}
+
+		}
+
+		.testimonial-author {
+			.testimonial-name {
+				.name {
+					color: $white;
+				}
+
+				span {
+					color: $white;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+.testimonial-dark.owl-carousel {
+	.testimonial-item {
+		.testimonial-quote {
+			i {
+				color: $white;
+			}
+
+		}
+
+		.testimonial-content {
+			p {
+				color: $white;
+			}
+
+		}
+
+		.testimonial-author {
+			.testimonial-name {
+				.name {
+					color: $white;
+				}
+
+				span {
+					color: $white;
+				}
+
+			}
+
+		}
+
+	}
+
+	.owl-dots {
+		.owl-dot {
+			span {
+				background: $white;
+			}
+
+		}
+
+	}
+
+}
+
+/* bg-dark */
+.bg-dark {
+	.testimonial-item {
+		.testimonial-quote {
+			i {
+				background: -webkit-linear-gradient($primary, $primary-2);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+
+		}
+
+		.testimonial-content {
+			p {
+				color: $white;
+			}
+
+		}
+
+		.testimonial-author {
+			.testimonial-name {
+				.name {
+					color: $white;
+				}
+
+				span {
+					color: $white;
+				}
+
+			}
+
+		}
+
+	}
+
+	.owl-nav {
+		.owl-prev {
+			color: $white !important;
+		}
+
+		.owl-next {
+			color: $white !important;
+		}
+
+	}
+
+}
+
+@media (max-width:1350px) {
+
+	.testimonial-bg.owl-carousel .owl-nav .owl-prev {
+    left: -50px;
+	}
+	.testimonial-bg.owl-carousel .owl-nav .owl-next {
+    right: -50px;
+	}
+
+}
+
+@media (max-width:1199px) {
+
+	.testimonial-center.owl-carousel .owl-nav .owl-prev,
+	.testimonial-bg.owl-carousel .owl-nav .owl-prev {
+    left: 0px;
+	}
+
+	.testimonial-center.owl-carousel .owl-nav .owl-next,
+	.testimonial-bg.owl-carousel .owl-nav .owl-next {
+    right: 0px;
+	}
+
+
+}
+
+@media (max-width:991px) {
+	.owl-carousel .owl-nav .owl-prev {
+		left: 0;
+	}
+
+	.owl-carousel .owl-nav .owl-next {
+		right: 0;
+	}
+
+	.testimonial-bg.owl-carousel .owl-nav .owl-prev,
+	.testimonial-bg.owl-carousel .owl-nav .owl-next {
+		display: none;
+	}
+
+	.testimonial-bg.owl-carousel .testimonial-item {
+    padding: 50px 40px;
+  }
+
+}
+
+@media (max-width:767px) {
+	.owl-carousel .owl-nav .owl-prev,
+	.owl-carousel .owl-nav .owl-next {
+		display: none;
+	}
+
+	.testimonial-center .testimonial-item {
+		padding: 0 0;
+	}
+
+	.testimonial-item .testimonial-content p {
+		font-size: 18px;
+		line-height: 28px;
+	}
+
+	.testimonial-bg.owl-carousel .testimonial-item {
+    padding: 40px;
+	}
+
+}
+
+@media (max-width:479px) {
+	.testimonial-item .testimonial-content p {
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	.testimonial-bg.owl-carousel .testimonial-item {
+    padding: 30px;
+	}
+
+}

@@ -1,0 +1,81 @@
+/*
+
+Template: Bulky - Creative Portfolio HTML5 Template
+Version: 1.0.0
+Author: potenzaglobalsolutions
+Design and Developed by: potenzaglobalsolutions.com
+
+NOTE: This is main stylesheet of template, This file contains the styling for the actual Template.
+
+*/
+
+/*================================================
+[  Table of contents  ]
+================================================
+
+ :: Typography
+ :: Helper Classes
+ :: Shortcodes
+  	- Accordion
+  	- Button
+    - Client
+    - Countdown
+    - Counter
+    - Feature Info
+    - List Style
+    - Owl Carousel
+    - Portfolio
+    - Pricing Table
+    - Skill
+    - Social Icon
+    - Swiper Slider
+    - Team
+    - Testimonial
+ :: Header
+   - Header 02
+   - Header 03
+ :: Layout
+   - Section Title
+   - Sticky column
+ :: Blog
+ :: Not Found
+ :: Footer
+   - Footer 02
+ :: Responsive
+
+======================================
+[ End table content ]
+======================================*/
+
+// Core files
+@import "variables";
+@import "typography";
+@import "helpers";
+
+// Shortcodes
+@import "shortcodes/accordion";
+@import "shortcodes/button";
+@import "shortcodes/client";
+@import "shortcodes/countdown";
+@import "shortcodes/counter";
+@import "shortcodes/feature-info";
+@import "shortcodes/list";
+@import "shortcodes/owl-carousel";
+@import "shortcodes/portfolio";
+@import "shortcodes/pricing";
+@import "shortcodes/skill";
+@import "shortcodes/social-icon";
+@import "shortcodes/swiper-slider";
+@import "shortcodes/team";
+@import "shortcodes/testimonial";
+
+// Structure
+@import "header";
+@import "layout";
+@import "footer";
+
+// Pages
+@import "blog";
+
+// Responsive
+@import "responsive";

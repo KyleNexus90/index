@@ -1,0 +1,155 @@
+/*****************************
+  Counter
+*****************************/
+
+.counter {
+	position: relative;
+	padding: 20px 0px 20px 50px;
+
+	.counter-icon {
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+
+		i {
+			font-size: 110px;
+			line-height: 110px;
+			background: -webkit-linear-gradient($primary, $primary-2);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			opacity: 0.2;
+			color: $primary;
+		}
+
+	}
+
+	.counter-content {
+			position: relative;
+		.timer {
+			position: relative;
+			font-size: 52px;
+			font-weight: 500;
+			font-family: $font-hedding;
+			color: $gray-8;
+			margin-bottom: 10px;
+			line-height: 52px;
+			display: inline-block;
+		}
+
+		.counter-icon-sign {
+			font-size: 52px;
+			font-weight: 500;
+			font-family: $font-hedding;
+			color: $gray-8;
+			margin-bottom: 10px;
+			line-height: 52px;
+		}
+
+		label {
+			font-size: 16px;
+			font-weight: 600;
+			display: block;
+			margin-bottom: 0;
+		}
+
+	}
+
+}
+
+.bg-primary-gradient {
+	.counter {
+		.counter-icon {
+			i {
+				background: $gray-9;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				color: $gray-9;
+			}
+
+		}
+
+		.counter-content {
+			.timer {
+				color: $white;
+			}
+
+			.counter-icon-sign {
+				color: $white;
+			}
+
+			label {
+				color: $white;
+			}
+
+		}
+
+	}
+
+}
+
+.bg-dark-gradient {
+	.counter {
+		.counter-icon {
+			i {
+				background: $white;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				color: $white;
+			}
+
+		}
+
+		.counter-content {
+			.timer {
+				color: $white;
+			}
+
+			.counter-icon-sign {
+				color: $white;
+			}
+
+			label {
+				color: $white;
+			}
+
+		}
+
+	}
+
+}
+
+@media (max-width:1199px) {
+	.counter {
+		margin-left: 0;
+	}
+
+}
+
+@media (max-width:991px) {
+	.counter {
+		.counter-icon {
+			i {
+				font-size: 80px;
+				line-height: 80px;
+			}
+
+		}
+
+		.counter-content {
+			.timer {
+				font-size: 40px;
+				line-height: 40px;
+			}
+
+			.counter-icon-sign {
+				font-size: 40px;
+				line-height: 40px;
+			}
+
+		}
+
+	}
+
+}
+

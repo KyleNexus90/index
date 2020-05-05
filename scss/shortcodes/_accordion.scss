@@ -1,0 +1,62 @@
+/*****************************
+  Shortcodes
+*****************************/
+
+/*****************************
+  Accordion
+*****************************/
+
+#accordion {
+	.card {
+		border: none;
+		padding: 0px;
+		margin-bottom: 15px;
+
+		.card-header {
+			background: none;
+			border-bottom: none;
+			padding: 0;
+
+			button {
+				position: relative;
+				font-size: 18px;
+				color: $gray-8;
+				padding: 17px 40px 17px 40px;
+				width: 100%;
+				text-align: left;
+				border: none;
+				background: $gray-1;
+
+				&:before {
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					left: 0px;
+					content: "\f068";
+					font-size: 14px;
+					font-family: "Font Awesome 5 Free";
+					width: 36px;
+					height: 36px;
+					line-height: 36px;
+					border-radius: 50%;
+					z-index: 9;
+					font-weight: 900;
+					text-align: center;
+					color: $primary;
+				}
+
+			}
+
+		}
+
+		.card-body {
+			padding: 10px 30px 0px 35px;
+		}
+
+	}
+
+}
+
+#accordion .card .card-header button.collapsed:before {
+	content: "\f067";
+}

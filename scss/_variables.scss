@@ -1,0 +1,35 @@
+// Font family
+$font-base: 		'Heebo', sans-serif;
+$font-hedding:	'Montserrat', sans-serif;
+
+// Colors
+$body-color:	  #626262;  // body-text
+$primary:				#fd4632;  // Primary color
+$primary-2:			#fa3a72;  // Primary 2 color
+$white:					#ffffff;
+$gray-1: 				#fcfcfc; 	// bg light
+$gray-2: 				#f4f4f5;
+$gray-3: 				#cdcdcd;
+$gray-4: 				#c1c1c1;
+$gray-5: 				#b7b7b7;
+$gray-6: 				#9b9b9b;
+$gray-7: 				#999999;
+$gray-8: 				#323232;  // Hedding & text color color
+$gray-9: 				#242536;  // dark bg color
+$black:  				#000000;
+
+$border-color: 	#eeeeee;
+
+//  For button and input border radius
+$border-radius: 3px;
+
+$box-shadow-sm:	0px 5px 16px 0px rgba($gray-7, .15);
+$box-shadow:	  0px 8px 27px 0px rgba($gray-7, .15);
+$boxshadow-lg:  0 1rem 3rem rgba($gray-7, .175);
+
+$bg-primary-gradient: linear-gradient(to right, $primary 30%, $primary-2 100%);
+$bg-dark-gradient: linear-gradient(to right, #161427 10%, #592036 100%);
+
+
+
+

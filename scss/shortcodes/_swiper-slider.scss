@@ -1,0 +1,151 @@
+/*****************************
+	Swiper Slider
+*****************************/
+
+.swiper-button-next,
+.swiper-button-prev {
+	position: absolute;
+	bottom: 50px;
+	top: auto;
+	display: flex;
+	align-items: center;
+	color: $white;
+	width: auto;
+	height: auto;
+}
+
+.swiper-button-next {
+	right: 70px;
+}
+
+.swiper-button-prev {
+	left: 70px;
+}
+
+.swiper-button-prev span,
+.swiper-button-next span {
+	padding: 0 15px;
+}
+
+.swiper-button-prev:focus,
+.swiper-button-next:focus {
+	outline: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	background-image: inherit !important;
+	z-index: 1;
+}
+
+.swiper-button-prev {
+	span {
+		position: relative;
+		top: 0px;
+		width: 18px;
+		height: 2px;
+		margin-right: 15px;
+		display: inline-block;
+		background: $primary;
+		transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0s;
+
+		&:before {
+			position: absolute;
+			content: "";
+			display: block;
+			width: 10px;
+			height: 2px;
+			top: -4px;
+			left: 0px;
+			border-radius: 2px;
+			background: inherit;
+			transform: rotate(-45deg);
+		}
+
+		&:after {
+			position: absolute;
+			content: "";
+			display: block;
+			height: 2px;
+			width: 10px;
+			bottom: -4px;
+			left: 0px;
+			border-radius: 2px;
+			background: inherit;
+			transform: rotate(45deg);
+		}
+
+	}
+
+	&:hover {
+		span {
+			width: 50px;
+		}
+
+	}
+
+}
+
+.swiper-button-next {
+	span {
+		position: relative;
+		top: 0px;
+		width: 18px;
+		height: 2px;
+		margin-left: 15px;
+		display: inline-block;
+		background: $primary;
+		transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0s;
+
+		&:before {
+			content: "";
+			display: block;
+			height: 2px;
+			position: absolute;
+			border-radius: 2px;
+			background: inherit;
+			transform: rotate(45deg);
+			top: -4px;
+			right: 0px;
+			width: 10px;
+		}
+
+		&:after {
+			content: "";
+			display: block;
+			height: 2px;
+			position: absolute;
+			border-radius: 2px;
+			background: inherit;
+			transform: rotate(-45deg);
+			width: 10px;
+			bottom: -4px;
+			right: 0px;
+		}
+
+	}
+
+	&:hover {
+		span {
+			width: 50px;
+		}
+
+	}
+
+}
+
+@keyframes loaderAnim {
+	to {
+		opacity: 1;
+		transform: scale3d(0.2, 0.3, 0.5);
+	}
+
+}
+
+@media (max-width:767px) {
+	.swiper-button-next,
+	.swiper-button-prev {
+		display: none;
+	}
+
+}

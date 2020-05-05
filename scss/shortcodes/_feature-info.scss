@@ -1,0 +1,92 @@
+/*****************************
+  Feature Info
+*****************************/
+
+.feature-step-item .feature-step .step-number {
+    font-size: 62px;
+    line-height: 52px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: $primary;
+    display: inline-block;
+}
+
+.feature-step-item .feature-step .step-title {
+    margin-bottom: 15px;
+}
+
+.feature-step-item .step-number {
+    font-size: 62px;
+    line-height: 52px;
+    font-weight: 500;
+    background: -webkit-linear-gradient($primary, $primary-2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    color: $primary;
+}
+
+.feature-step-item .feature-step .step-title {
+    margin-bottom: 15px;
+}
+
+.feature-info {
+    position: relative;
+    transition: all 0.5s ease;
+    overflow: hidden;
+    height: 100%;
+}
+
+.feature-info i {
+    font-style: normal;
+    padding-right: 20px;
+    font-size: 56px;
+    line-height: 66px;
+    display: inline-block;
+    background: -webkit-linear-gradient($primary, $primary-2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: $primary;
+}
+
+.feature-info .feature-info-content {
+    transition: all 0.5s ease;
+}
+
+.feature-info .feature-info-content .icon-btn {
+    opacity: 0;
+    margin-top: 15px;
+    position: relative;
+    bottom: -50px;
+}
+
+.feature-info:hover .feature-info-content .icon-btn {
+    opacity: 1;
+    bottom: 0;
+}
+
+.feature-info.text-center {
+    i {
+        padding-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    h4 {
+        margin-bottom: 20px;
+    }
+
+}
+
+.feature-info.bg-primary i,
+.feature-step-item.bg-primary .step-number{
+  background: $white;
+  -webkit-background-clip: text;
+  color: $white;
+}
+
+.feature-info.bg-primary .feature-info-content .icon-btn{
+  color: $white;
+}
+.feature-info.bg-primary .feature-info-content .icon-btn span {
+    background: $white;
+}
